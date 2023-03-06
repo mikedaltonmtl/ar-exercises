@@ -26,12 +26,3 @@ puts "Average Annual Revenue: #{@average_revenue}"
   .size
 
 puts "Number of stores generating $1M or more in annual sales: #{@big_stores}"
-
-
-
-# @womens_small_stores = Store
-#   .where(womens_apparel: true)
-#   .where("annual_revenue < 1000000")
-
-# @womens_small_stores.each { |store| puts "#{store.name} #{store.annual_revenue}" }
-
