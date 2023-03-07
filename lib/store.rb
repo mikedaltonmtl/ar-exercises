@@ -1,8 +1,10 @@
 class Store < ActiveRecord::Base
-  has_many :employees
+  has_many :employees, :dependent => :restrict_with_error
+
   validates :name, length: { minimum: 3 }
   validates :annual_revenue, numericality: { only_integer: true }
   validates :annual_revenue, numericality: { greater_than_or_equal_to: 0 }
+
   validate :apparel_presence
 
   private
@@ -32,4 +34,7 @@ end
   Stores have an annual_revenue that is a number (integer) that must be 0 or more
   BONUS: Stores must carry at least one of the men's or women's apparel
   (hint: use a custom validation method - don't use a Validator class)
+
+  For data integrity reasons, we want to restrict users from deleting (aka destroying)
+  store records for stores that have 1 or more employees.
 =end
