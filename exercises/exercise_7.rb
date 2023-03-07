@@ -21,8 +21,8 @@ puts "Please enter the name of the store."
 print "> "
 @store_name = $stdin.gets.chomp
 
-store = Store.create(name: @store_name, annual_revenue: 100000, mens_apparel: true, womens_apparel: true)
-# store = Store.create(name: @store_name)
+# store = Store.create(name: @store_name, annual_revenue: 100000, mens_apparel: true, womens_apparel: true)
+store = Store.create(name: @store_name)
 
 p store.errors.size
 store.errors.objects.each { |error| puts error.full_message }
