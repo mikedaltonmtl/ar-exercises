@@ -36,14 +36,14 @@ Go ahead and create some more employees using the create method. You can do this
   Create a bunch under @store1 (Burnaby) and @store2 (Richmond). Eg: @store1.employees.create(...).
 =end
 
-@store1.employees.create(first_name: "Michael", last_name: "Scott", hourly_rate: 50)
-@store1.employees.create(first_name: "Jim", last_name: "Halpert", hourly_rate: 40)
-@store1.employees.create(first_name: "Pam", last_name: "Beesly", hourly_rate: 30)
-@store1.employees.create(first_name: "Dwight", last_name: "Schrute", hourly_rate: 40)
-@store1.employees.create(first_name: "Stanley", last_name: "Hudson", hourly_rate: 40)
+@store1.employees.create(first_name: "Michael", last_name: "Scott", hourly_rate: 100)
+@store1.employees.create(first_name: "Jim", last_name: "Halpert", hourly_rate: 80)
+@store1.employees.create(first_name: "Pam", last_name: "Beesly", hourly_rate: 60)
+@store1.employees.create(first_name: "Dwight", last_name: "Schrute", hourly_rate: 80)
+@store1.employees.create(first_name: "Stanley", last_name: "Hudson", hourly_rate: 80)
 
-@store2.employees.create(first_name: "Ryan", last_name: "Howard", hourly_rate: 30)
-@store2.employees.create(first_name: "Phyllis", last_name: "Vance", hourly_rate: 40)
-@store2.employees.create(first_name: "Kevin", last_name: "Malone", hourly_rate: 30)
-@store2.employees.create(first_name: "Angela", last_name: "Martin", hourly_rate: 40)
-@store2.employees.create(first_name: "Oscar", last_name: "Martinez", hourly_rate: 40)
+@store2.employees.create(first_name: "Ryan", last_name: "Howard", hourly_rate: 40)
+@store2.employees.create(first_name: "Phyllis", last_name: "Vance", hourly_rate: 80)
+@store2.employees.create(first_name: "Kevin", last_name: "Malone", hourly_rate: 50)
+@store2.employees.create(first_name: "Angela", last_name: "Martin", hourly_rate: 80)
+@store2.employees.create(first_name: "Oscar", last_name: "Martinez", hourly_rate: 70)
